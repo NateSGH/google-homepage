@@ -51,6 +51,12 @@ header #sign-in-btn:hover {
     background-color: #3886ec;
 }
 
+header #sign-in-btn:active, header #sign-in-btn:focus  {
+    background: #63a0ef;
+    border: none;
+    outline: none;
+}
+
 main {
     flex: 1 0 auto;
     align-self: center;
@@ -135,6 +141,14 @@ main {
     box-shadow: 1px 1px rgb(0 0 0 / 10%);
     border: 1px solid #dadce0;;
     color: #202124;
+}
+
+.content .search-bar-btn:active, .content .search-bar-btn:focus {
+    cursor: pointer;
+    box-shadow: 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #4d90fe;;
+    color: #202124;
+    outline: none;
 }
 
 .content #text-for-lang {
