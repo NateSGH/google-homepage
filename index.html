@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Google</title>
 </head>
 <body>
     <header>
-        <a href="">Gmail</a>
-        <a href="">Images</a>
-        <button>Sign In</button>
+        <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+        <a href="https://www.google.ru/imghp?hl=en&ogbl">Images</a>
+        <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
+            <button id="sign-in-btn" >Sign In</button>
+        </a>
     </header>
     <main>
         <div class="content">
             <img id="Google-logo" src="images/googlelogo_272x92dp.png" alt="Google Logo">
-            <input type="search">
-            <button id="search-btn" >Google Search</button>
-            <button id="lucky-btn">I'm Feeling Lucky</button>
+            <div id="search-bar"> 
+                <i class="fa fa-search fa-lg icon" aria-hidden="true"></i>
+                <input type="search">
+                <i class="fa fa-microphone fa-lg icon" aria-hidden="true"></i>
+            </div>
+            <button class="search-bar-btn" id="search-btn" >Google Search</button>
+            <button class="search-bar-btn" id="lucky-btn">I'm Feeling Lucky</button>
             <div id="text-for-lang">
-                <label for="lang">Google offered in:</label> <a href="">русский</a>
+                <label for="lang">Google offered in:</label> <a id="lang-a" href="https://www.google.com/setprefs?sig=0_VK3Pw1JbX5rCD39ZvzYQh5n3PZg%3D&hl=ru&source=homepage&sa=X&ved=0ahUKEwi7_fLPhZHvAhUCyoUKHXgkD8QQ2ZgBCA4">русский</a>
             </div>
         </div>
     </main>
     <footer>
-        <p>Russia</p>
+        <div class="country"> <p>Russia</p> </div>
+        
         <div class="footer-start">
-            <a href="">About</a>
-            <a href="">Advertising</a>
-            <a href="">Bussiness</a>
-            <a href="">How search works</a>
+            <a href="https://about.google/?utm_source=google-RU&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+            <a href="https://www.google.com/intl/en_ru/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Bussiness</a>
+            <a href="https://google.com/search/howsearchworks/?fg=1">How search works</a>
         </div>
         <div class="footer-end">
-            <a href="">Privacy</a>
-            <a href="">Terms</a>
+            <a href="https://policies.google.com/privacy?hl=en-RU&fg=1">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en-RU&fg=1">Terms</a>
             <a href="">Settings</a>
         </div>
     </footer>
